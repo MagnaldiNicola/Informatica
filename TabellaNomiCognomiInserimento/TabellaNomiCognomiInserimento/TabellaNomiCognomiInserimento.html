@@ -1,0 +1,57 @@
+<html>
+    <head>
+        Tabella Nomi Cognomi Inserimento
+    </head><br>
+
+    <body>
+        <label>Inserisci il nome: </label>
+        <textarea name="nome"></textarea><br>
+        <label>Inserisci il cognome: </label>
+        <textarea name="cognome"></textarea><br>
+
+        <script src="AggiungiTabellaNomiCognomiJQuery.js">
+        
+                document.write('<table border="1">');
+                
+                    document.write('<tr>');
+                    
+                        //riga nome
+                        document.write('<td>');
+                        document.write('Nome');
+                        document.write('</td>');
+                        //riga cognome
+                        document.write('<td>');
+                        document.write('Cognome');
+                        document.write('</td>');
+                
+                    document.write('</tr>');
+                
+
+                document.write('</table><br>');
+                document.close();
+
+                function aggiungi(){
+                    document.write('<tr>');
+                    
+                    //riga nome
+                    document.write('<td>');
+                    document.write(nome = Request.Form("nome"));
+                    document.write('</td>');
+                    //riga cognome
+                    document.write('<td>');
+                    document.write(cognome = Request.Form("cognome"));
+                    document.write('</td>');
+            
+                document.write('</tr>');
+                }
+            
+            
+        </script>
+
+        <input type=button value="Aggiungi alla tabella" name="inserisci" OnClick="javascript:aggiungi"> 
+
+        
+    
+    </body>
+
+</html>
