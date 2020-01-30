@@ -1,0 +1,18 @@
+.green{
+    background-color: green;
+    
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}
+.pink{
+    background-color: pink;
+}
+#larghezzariga{
+    border-top: 20px solid red;
+    padding-top: 30px dashed blue;
+    margin-top: 40px dotted pink;
+}
